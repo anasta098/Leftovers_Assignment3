@@ -1,0 +1,108 @@
+h1 { 
+  font-family: Arial, Helvetica, sans-serif;
+  color : black;
+  text-align: center; 
+  
+}
+
+h2 {
+ font-size: 70; 
+ font-family: Arial, Helvetica, sans-serif;
+ color: black; 
+ text-align: center;
+ 
+}
+p, ul, li {
+  font-family: Arial, Helvetica, sans-serif; 
+  	font-size: 18px; 
+	color: black;  
+	text-align: left; 
+}
+.imgtext {
+	height: auto;
+	width: 12%;
+	background-color: gray;
+	
+	box-shadow: 2px 4px 8px 3px Gainsboro;
+	margin: 2%;
+	float: left;
+}
+
+img { 
+width: 1400px; 
+}
+ 
+
+
+.caption { 
+  text-align: center;
+  padding: 1px 1px; 
+
+} 
+    .navbar {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14pt;
+    background: #03989E;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    box-sizing: border-box;
+}eft;
+}
+.navbar a{ 
+font-family: Arial, Helvetica, sans-serif; 
+background-color:#03989E;
+float: center; 
+color:white; 
+text-align: center; 
+padding:10px 10px;
+text-decoration: none; 
+font-size: 25px; 
+
+} 
+.navbar a:hover { 
+opacity: 0.3; 
+color:black;
+}  
+
+
+.button {
+  
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px; 
+  border-radius: 50px;
+}  
+.text { 
+
+width: auto; 
+background: #F0F0F0; 
+padding-bottom: 10px;
+} 
+.center {
+  display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 50%;
+} 
+table, th, td {
+  border: 1px solid black;
+} 
+.tablecont { p, ul, li {
+  font-family: Arial, Helvetica, sans-serif; 
+  	font-size: 20px; 
+	color: black;  
+	text-align: left;
+}
+
+} 
+
