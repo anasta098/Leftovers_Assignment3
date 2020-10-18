@@ -273,7 +273,8 @@ padding-bottom:10px;
 .feature a{  
 text-decoration:none; 
 color:white; 
-padding-bottom:10px; 
+padding-bottom:10px;  
+
 } 
 .feature a:hover{
 color: white; 

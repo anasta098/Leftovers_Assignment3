@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="LogInPage.css">
+<script src="https://unpkg.com/konva@7.1.3/konva.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app"> 
+
+  <header>
+    <div class="bar">
+      <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24">
+</svg>
+
+      <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24">
+    <path d="M12.01 21.49L23.64 7c-.45-.34-4.93-4-11.64-4C5.28 3 .81 6.66.36 7l11.63 14.49.01.01.01-.01z" fill-opacity=".3"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3.53 10.95l8.46 10.54.01.01.01-.01 8.46-10.54C20.04 10.62 16.81 8 12 8c-4.81 0-8.04 2.62-8.47 2.95z"/>
+</svg>
+
+      <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24">
+    <path d="M2 22h20V2z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </div>
+
+    <div>
+	<h3>Build Room</h3>
+  </div>
+  </header> 
+
+
+    <body>
+
+<div id="container"></div>
+    <script>
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      var stage = new Konva.Stage({
+        container: 'container',
+        width: width,
+        height: height,
+      });
+
+      var layer = new Konva.Layer();
+
+      // bound below y=50
+      var blueGroup = new Konva.Group({
+        x: 100,
+        y: 100,
+        draggable: true,
+        dragBoundFunc: function (pos) {
+          var newY = pos.y < 50 ? 30 : pos.y; 
+		  
+          return {
+            x: pos.x,
+            y: newY,
+          };
+        },
+      });
+      var blueText = new Konva.Text({
+        fontSize: 26,
+        fontFamily: 'Calibri',
+        text: 'couch',
+        fill: 'black',
+        padding: 10,
+      });
+
+      var blueRect = new Konva.Rect({
+        width: blueText.width(),
+        height: blueText.height(),
+        fill: '#aaf',
+        stroke: 'black',
+        strokeWidth: 4,
+      });
+
+
+
+      blueGroup.add(blueRect).add(blueText);
+
+
+      layer.add(blueGroup);
+   
+
+      // add the layer to the stage
+      stage.add(layer);
+    </script> 
+	
+</body> 
+</div>
+</html>
